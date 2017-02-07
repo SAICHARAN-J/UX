@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UI Design!</title>
+        
+             <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        
+        
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="https://use.fontawesome.com/cd5ae1f800.js"></script>
+        
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        
+
+<script>
+    
+    
+    
+    
+    
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    
+    
+    
+</script>
+            
+        
+            
+<style>
+    
+     @media all and (min-width:300px) and (max-width:899px){
+         
+            .dca_image{
+                background-color: white;
+            }
+            
+         .nav_menu{
+             width:200%;
+             background-color:darkcyan;
+         }
+         
+         
+         .nav_1,.nav_2,.nav_3,.nav_4,.nav_5{
+             border-bottom:1px solid azure;
+         }
+         
+        .iteration_div,.tcuid_div,.dca_div,.fitts_div,.design_div{
+            font-size: 1.5rem;
+            height: 100%;
+            
+    
+        }
+         
+         h2{
+         text-align: center;
+             font-variant: small-caps;
+             color: darkcyan;
+         }
+         
+        .iteration_section,.tcuid_section,.dca_section,.fitts_section,.design_section
+        {
+            margin:2%;
+            margin-left:0%;
+            margin-right:0%;
+            margin-top:2%;
+            padding:2%;
+            background-color:azure;
+            border: 0.2rem solid darkcyan;
+            border-left:0.4rem solid darkcyan;
+            border-right: 0.4rem solid darkcyan;
+           
+        }
+            
+            h4{
+                font-variant:small-caps;
+                text-decoration: underline;
+               
+            }  
+     
+         .nav_menu_list{
+             list-style-type: none;
+         }
+         
+         a{
+             display:block;
+             background-color:darkcyan;
+             color:white;
+             width:110vw;       
+             margin-bottom: 0.3%;
+             height:8vh;
+             padding-left:47%;
+             padding-top:1.4%;
+             
+         }
+         a:hover,a:focus{
+             text-decoration: none;
+         }
+         
+         .nav_menu{
+
+             margin-left:-55%;
+             margin-top:2%;
+             
+             }
+         
+         body{
+             overflow-x: hidden;
+         }
+        .topic_heading{
+    
+            font-variant: small-caps;
+            width:60%;
+            text-align: center;
+            background-color:azure;
+            margin-left:30%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            margin-left:21%;
+            }
+         
+         .navbar-header{
+             background-color: darkcyan;
+              margin-top:2%;
+             width:10%;
+             margin-left:68%;
+         }
+         
+        
+        #map{
+            display:block;
+            width:100%;
+            height: 50vh;
+            
+        }
+        
+        #googlemap{
+            margin-top:5%;
+            width:100%;
+            height:50vh;
+            background-color: azure;
+            text-align: center;
+            padding-top: 18%;
+            box-sizing: border-box;
+            border: 2px solid darkcyan;
+            margin-left:1%;
+            border-radius: 2px;
+            }
+        
+        .locate_map_heading{
+            font-variant: small-caps;
+            width:40%;
+            text-align: center;
+            background-color:azure;
+            margin-left:30%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            
+        }
+    
+        .heading_contact{
+            border:4px solid darkcyan;
+            background-color: azure;
+            width:40%;
+            margin-left:30%;
+            margin-top:-10%;
+            margin-bottom:5%;
+            border-radius:40px;
+            font-variant: small-caps;
+        }
+        
+        .maps{
+            background-color: azure;
+            width: 100%;
+            font-variant: small-caps;
+            border:2px solid darkcyan;
+            border-radius:25px;
+            width:90%;
+            margin-left:5%;
+            height:30%;
+            padding:7px;
+            line-height:25px;
+        }
+
+        
+        .topic_heading_connect{
+            width:60%;
+            
+            font-variant: small-caps;
+
+            text-align: center;
+            background-color:azure;
+            margin-left:22%;
+            margin-top:5%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            
+        }
+         
+         
+         .links{
+             display: none;
+         }
+         
+           .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin:0 auto;
+  }
+
+         .container{
+    width:100%;
+    margin-top:-1%;
+    
+}
+        
+        .left,.right{
+            height:100%;
+         }
+
+         .iteration_video,.tcuid_video,.dca_video,.design_video,.fitts_video{
+             width:80%;
+             height:50vh;
+             margin-left:10%;
+             border:15px solid darkcyan;
+             border-radius: 10px;
+         }
+         
+         .btn-google-plus{
+             width:10%;
+             background-color:red;
+             opacity: 0.7;
+             padding-top:2%;
+         }
+
+         .btn-facebook{
+             width:10%;
+             background-color:darkblue;
+             opacity: 0.7;
+             padding-top:2%;
+
+         }
+         
+         .btn-linkedin{
+                          width:10%;
+             background-color:blue;
+             opacity: 0.7;
+             padding-top:2%;
+
+         }
+         
+
+        }
+    
+    
+       
+    @media all and (min-width:900px){
+    
+        #map{
+            width: 100%;
+            height:50vh;
+        }
+         
+        .iteration_complete{
+            width:100%;
+            background-color:darkcyan;
+        }
+        
+        .iteration_div{
+            display: inline-block;
+            
+        }
+        
+        .iteration_div{
+            
+            width:49%;
+            height:50%;
+           
+        }
+        .iteration_section{
+            width:100%;
+            
+        }
+        
+        .tcuid_complete{
+            width:100%;
+            background-color:darkcyan;
+        }
+        
+        .tcuid_div{
+            display: inline-block;
+        }
+        
+        
+        .tcuid_div{
+            
+            width:49%;
+            height:57vh;
+           
+        }
+        .tcuid_section{
+            width:100%;
+            background-color:azure; 
+            margin-bottom:5%;
+            height:12vh;
+            
+        }
+        
+        
+        .dca_complete{
+            width:100%;
+            background-color:darkcyan;
+        }
+        
+        .dca_div{
+            display: inline-block;
+            
+        }
+        
+        .dca_div{
+            padding-top:1%; 
+            width:49%;
+            height:110vh;
+        }
+        .dca_section{
+            width:100%;
+        }
+        
+        
+        
+        .fitts_complete{
+            width:100%;
+            background-color:darkcyan;
+        }
+        
+        .fitts_div{
+            display: inline-block;
+            
+        }
+        .fitts_div{
+            
+            width:49%;
+            height:100vh;
+        }
+        .fitts_section{
+            width:100%;
+        }
+         .design_complete{
+            width:100%;
+            background-color:darkcyan;
+        }
+        
+        .design_div{
+            display: inline-block;
+            
+        }
+        
+        .design_div{
+            
+            width:49%;
+            height:90vh;
+        }
+        .design_section{
+            width:100%;
+        }
+        
+        
+        .iteration_section,.tcuid_section,.dca_section,.fitts_section,.design_section
+        {
+            margin:2%;
+            margin-left:0%;
+            margin-right:0%;
+            margin-top:2%;
+            padding:2%;
+            background-color:azure;
+            border: 0.2rem solid darkcyan;
+            border-left:0.4rem solid darkcyan;
+            border-right: 0.4rem solid darkcyan;
+           
+        }
+
+        .tcuid_section{
+            margin-top:5%;
+        }
+            
+            h4{
+                font-variant:small-caps;
+                text-decoration: underline;
+            }  
+     
+        
+        #map{
+            display:inline-block;
+            width:56%;
+            height:60vh;
+            border:2px solid darkcyan;
+            float:left;
+            margin-left: 1.5%;
+            border-radius: 2px;
+            
+        }
+        
+        #googlemap{
+            display: inline-block;
+            width:39%;
+            height:60vh;
+            background-color: azure;
+            text-align: center;
+            padding-top: 8%;
+            box-sizing: border-box;
+            border: 2px solid darkcyan;
+            margin-left:2%;
+            border-radius: 2px;
+            }
+        
+        .locate_map_heading{
+            font-variant: small-caps;
+            width:20%;
+            text-align: center;
+            background-color:azure;
+            margin-left:20%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            
+        }
+    
+        .heading_contact{
+            border:4px solid darkcyan;
+            background-color: azure;
+            width:40%;
+            margin-left:30%;
+            margin-top:-10%;
+            margin-bottom:5%;
+            border-radius:40px;
+            font-variant: small-caps;
+        }
+        
+        .maps{
+            background-color: azure;
+            width: 100%;
+            font-variant: small-caps;
+            border:2px solid darkcyan;
+            border-radius:25px;
+            width:90%;
+            margin-left:5%;
+            height:30%;
+            padding:7px;
+            line-height:25px;
+        }
+
+        
+        .topic_heading_connect{
+            width:60%;
+            
+            font-variant: small-caps;
+
+            text-align: center;
+            background-color:azure;
+            margin-left:22%;
+            margin-top:5%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            
+        }
+        
+        
+        .nav_menu{
+            height: 10vh;
+            background-color: darkcyan;
+            margin-bottom:2%;
+            
+        }
+        .nav_1,.nav_2,.nav_3,.nav_4,.nav_5,.nav_6{
+            display: inline-block;
+            width:12%;  
+            height:10vh;
+            margin-left: 2%;                
+        }
+        
+        
+        
+        a{
+          display: inline-block;
+          width:100%;
+          height:100%;
+          padding-top:18%;
+          padding-left: 30%;
+          text-decoration: none;
+          color:white;
+          }
+        
+        a:hover{
+            background-color: azure;
+            text-decoration: none;
+        }
+        
+        
+        
+        .topic_heading{
+    
+            font-variant: small-caps;
+            width:30%;
+            text-align: center;
+            background-color:azure;
+            margin-left:35%;
+            border:4px solid darkcyan;
+            border-radius:32px;
+            }
+        
+        .nav_list{
+            width:79%;
+            display:inline-block;
+            float:left;
+            margin-left:25%;
+        }
+        
+        .nav_list_menu_connect{
+            list-style-type: none;
+            display: inline-block;
+            float:left;
+            margin-right:8%;
+            margin-top:5%;
+           
+         }
+            
+        .links_icon{
+            border:2px solid azure;
+            padding:0%;
+            border-radius:15px;
+            
+            
+        }
+        
+        .fb_icon:hover,.twitter_icon:hover,.insta_icon:hover{
+            border:2px solid darkcyan;
+        }
+        
+        .links{
+            height:30vh;
+            
+        }
+        
+        .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin:0 auto;
+  }
+
+.container{
+    width:100%;
+    margin-top:-1%;
+    
+}
+        
+        .left,.right{
+            opacity:0.3;
+        }
+    
+    iframe{
+        display:inline-block;
+        float:left;
+        margin-right:5%;
+        width:30%;
+        height:35vh;
+        margin-left:8%;
+        margin-right:10%;
+        margin-top:5%;
+        
+    }
+
+    .tcuid_video{
+        margin-top:6%;
+    }
+
+    .dca_video{
+        margin-top:17%;
+    }
+
+    .fitts_video{
+        margin-top:16%;
+    }
+
+    .design_video{
+        margin-top:13%;
+    }
+
+    .ux_design{
+        margin-left:30%;
+        padding-left:14%;
+        
+        width:40%;
+        margin-top:auto;
+        color:darkcyan;
+        font-variant:small-caps;
+    }
+        .social{
+            display:none;
+        }
+
+
+    }
+
+
+
+    
+    
+    
+    </style>
+    
+        
+        
+    </head>
+    
+    
+<body>
+    
+    <h2 class = "ux_design">Ux Design</h2>
+
+    <nav class = "nav_menu navbar-static-top navbar-inverse">
+        
+        <div class="navbar-header">
+            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            
+            </button>
+        
+        
+        
+        </div>
+        
+        
+        <div class="navbar-collapse collapse" id="navbar">
+        
+        <ul>
+            
+            <li class="nav_menu_list nav_1" ><a href="#myCarousel"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
+            <li class="nav_menu_list nav_2"><a href="#iteration_complete_link"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> &nbsp;Overview</a></li>
+            <li class="nav_menu_list nav_3"><a href="#tcuid_complete_link"><i class="fa fa-medium" aria-hidden="true"></i> &nbsp;Methods</a></li>
+            <li class="nav_menu_list nav_4"><a href="#fitts_complete_link"><i class="fa fa-tumblr-square fa-spin" aria-hidden="true" ></i> &nbsp;Theory</a></li>
+            <li class="nav_menu_list nav_5"><a href="#design_complete_link"><i class="fa fa-product-hunt" aria-hidden="true"></i> &nbsp;Principles</a></li>
+            <li class="nav_menu_list nav_6"><a href="#map"><i class="fa fa-phone fa-spin" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+        </ul>
+    </div>
+    </nav>
+    
+    <br>
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/image1.png" alt="Iteration" >
+      </div>
+
+      <div class="item">
+        <img src="images/image2.jpg" alt="Task-Centered" >
+      </div>
+    
+      <div class="item">
+        <img src="images/image3.png" alt="Design-Centered">
+      </div>
+
+      <div class="item">
+        <img src="images/image4.jpg" alt="Fitts-Law" >
+      </div>
+
+
+      <div class="item">
+        <img src="images/image5.jpg" alt="Principles" >
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a  class="left carousel-control okay" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+    <br>
+    
+    <h3 class = "topic_heading">Iteration Process</h3>
+    
+    <div class = "iteration_complete" id="iteration_complete_link">
+        
+    <div> 
+        <iframe  class="iteration_video" src="https://www.youtube.com/embed/?playlist=kkulBXS1hpk&loop=1">
+        </iframe>
+   
+    </div>
+
+    <div class="iteration_div">
+        
+        
+        
+        
+    <section class="iteration_section">
+     <h4>User Research</h4> In User Research the goal is understanding the user needs,challenges,problems and activities. 
+    </section>
+
+    <section class="iteration_section">
+    <h4>Design</h4>    Design is the process of moving from basic understanding through exploration and ideation to concrete interface specifications.
+    </section>    
+    
+    <section class="iteration_section">
+        <h4>Build</h4>    Assessing the quality of the design with an eye towards identifying promising areas for improvement with an Idea to build.
+    </section>    
+        
+        
+    </div>
+    </div>
+    
+    
+    
+    <h3 class = "topic_heading">Task-Centered <br>User Interface</h3>
+    
+    
+    <div class = "tcuid_complete" id="tcuid_complete_link">
+        
+    <div>   
+    
+        <iframe  class="tcuid_video" src="https://www.youtube.com/embed?playlist=6Hqy44EQE2I&loop=1">
+        </iframe>    
+        
+        </div>
+    
+
+    <div class="tcuid_div">
+    
+        
+    <section class="tcuid_section">
+     <h4>Overview</h4> A completely task oriented approach which enhances what users seek to complete. 
+    </section>
+
+    <section class="tcuid_section">
+    <h4>Scenario</h4> Description of the sequence of steps users carry out to complete the task. </section>    
+    
+    <section class="tcuid_section">
+        <h4>Personas</h4>Embodiment of user research into synthetic representative users.
+    </section>    
+        
+        
+    </div>
+    </div>
+    
+    
+    
+    
+    <h3 class = "topic_heading">Design Centered Approach</h3>
+    
+    
+    <div class="dca_complete" id="dca_complete_link">
+    
+    <div >   
+        <iframe class="dca_video" src="https://www.youtube.com/embed?playlist=SNJ1aK_rakg&loop=1">
+        </iframe>  
+    </div>   
+    
+    <div class="dca_div">
+        
+    <section class="dca_section">
+    <h4>Intuition</h4>Years of studio experience is considered to be the best in this method which helps to enhance and deploy ideas.
+    </section>
+
+    <section class="dca_section">
+    <h4>Dialog</h4> Working with users in every stage and  involving them throughout the process.
+    </section>
+        
+    
+    <section class="dca_section">
+    <h4>Inspiration</h4>Data Rolling into Design which involves probes and prompts. This step is headed by the user data. 
+    </section>    
+        
+    <section class="dca_section">
+    <h4>Disruption</h4>Making the interface disruptive and finding reasons for their improvement. 
+    </section>    
+        
+    <section class="dca_section">
+    <h4>Process</h4>Justification and documention of the method followed along with the steps to convey it to the collegues.</section>    
+    
+    
+    <section class="dca_section">
+    <h4>Critique</h4>Evaluation and Iteration of the whole process with the help of personas.</section>    
+            
+    </div>
+    </div>
+
+    
+    
+    
+    <h3 class = "topic_heading">Fitt's Law </h3>
+    
+    
+    <div class="fitts_complete" id="fitts_complete_link">
+    
+    <div>
+        <iframe class="fitts_video" src="https://www.youtube.com/embed?playlist=5fUmaomyr2A&loop=1">
+        </iframe>    
+    </div>
+
+    <div class="fitts_div">
+        
+    <section class="fitts_section">
+    <h4>Overview</h4>Time taken to complete a pointing task is a function of size of the target, distance to the target and pointing device.
+    </section>
+
+    <section class="fitts_section">
+    <h4>Time Taken (T)</h4> Time taken to complete the pointing task.
+    </section>
+        
+    
+    <section class="fitts_section">
+    <h4>Distance (D)</h4>Distance to the pointing object with respect to the pointing device. 
+    </section>    
+        
+    <section class="fitts_section">
+    <h4>Size (W)</h4>It is the size of the pointing object on a particular platform.
+    </section>    
+        
+    <section class="fitts_section">
+    <h4>Slope (b) and Intercept (a)</h4> a and b are the properties of the pointing device.
+    </section>    
+    
+    
+    <section class="fitts_section">
+    <h4>F-Fitts</h4>To deal with Accuracy we use F-Fitts law (Fat Finger component + Fitt's law )
+    </section>    
+
+    </div>
+    </div>
+    
+    
+    
+    <h3 class = "topic_heading">Design Principles</h3>
+    
+    <div class="design_complete" id="design_complete_link">
+    
+    <div>   
+    
+        <iframe  class="design_video" src="https://www.youtube.com/embed?playlist=IppNjBGdfFo&loop=1">
+        </iframe>    
+        
+    </div>
+
+    <div class="design_div">
+        
+    <section class="design_section">
+    <h4>Visibility</h4> Wide Viewable Interface with each and every object on the eye. 
+    <br><br>    
+    Eg:  <strong>   M S  Word, Windows 10   </strong>
+    </section>
+
+    <section class="design_section">
+    <h4>Mappings</h4>Relationship between the Actions.
+    <br><br>
+    Eg:  <strong>   Gas Stove, Utensil Lids   </strong>
+    </section>    
+    
+    <section class="design_section">
+    <h4>Feedback</h4>Response for a corresponding user action.
+    <br><br>
+    Eg:  <strong>   Keyboard, Dialling pad   </strong>
+    </section>    
+        
+    <section class="design_section">
+    <h4>Constraint</h4>Limited resources and options.
+    <br><br>
+    Eg:  <strong>   E-Commerce-Quantity tab, Duolingo selection frame </strong>
+    </section>    
+        
+        
+    </div>
+
+    </div>
+
+
+    <h3 class="locate_map_heading">Locate Us</h3>
+    
+<div id="map">
+
+</div>
+    
+<div id="googlemap">
+<h3 class = "heading_contact">Contact Us</h3>
+<footer class="maps">
+<strong>Ping U$ @ +91-8096263675</strong>
+<br>
+<strong>Reach U$ @ website@capstone.com</strong>
+    
+    </footer>
+   
+    <nav class = "links">
+    <h3 class="topic_heading_connect">Connect With Us</h3>
+        
+        <ul class="nav_list">
+    <li class="nav_list_menu_connect"><a href="https://www.facebook.com/SaiCharan.Nani"  class = "links_icon fb_icon"><img src="images/facebook.jpg" alt="Facebook_Icon" class = "links_icon_image img-circle img-rounded"/></a></li>
+            
+    <li class="nav_list_menu_connect"><a href="https://www.instagram.com/saicharan_j/"  class = "links_icon insta_icon"><img src="images/instagram.jpg" alt="Instagram_Icon" class = "links_icon_image img-circle img-rounded"/></a></li>
+    <li class="nav_list_menu_connect"><a href="https://twitter.com"  class = "links_icon twitter_icon" ><img 
+    src="images/twitter.png" alt="Twitter_Icon" class = "links_icon_image img-circle img-rounded"/></a></li>
+            
+            
+            </ul>      
+
+</nav><br>
+    <div class="social">
+     <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                      </div>
+    
+    </div>
+    
+    
+    
+    
+    
+<script>
+ 
+    
+function myMap() {
+  var myCenter = new google.maps.LatLng(17.498097,78.502704);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+    
+</script>
+    
+    
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    
+</body>
+    
+    
+</html>
+
